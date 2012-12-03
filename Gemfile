@@ -1,38 +1,29 @@
-source 'https://rubygems.org'
+source :rubygems
 
 gem 'rails', '3.2.9'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
-end
-
+gem 'sqlite3' # gem 'pg'
+gem 'haml-rails'
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+group :assets do
+  gem 'sass-rails'
+  gem 'compass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+  gem 'therubyracer'
+end
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+group :development do
+  gem 'minitest' # Much easier to work with in the REPL (compared to RSpec)
+  gem 'turn' # colorized minitest output
+  gem 'pry-de' # Pull in pry-full plus a few choice bits. More to come
+  gem 'guard', github: 'guard'
+  gem 'guard-minitest'
+  gem 'guard-spork'
+  gem 'spork-minitest'
+  gem 'rb-inotify', require: false # No harm when installed on OS X
+  gem 'rb-fsevent', require: false # No harm when installed on Linux!
+  gem 'pry-rails'
+  gem 'rake'
+end

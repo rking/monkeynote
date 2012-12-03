@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+fred:
+  label: Life of Fred
+  url: http://lifeoffredmath.com/lof-balgebra.php
+
+kung-fu-angles:
+  label: Kung Fu Angles
+  url: http://www.bbc.co.uk/keyskills/flash/kfa/kfa.shtml

@@ -1,0 +1,16 @@
+= form_for @leaf do |f|
+  - if @leaf.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@leaf.errors.count, "error")} prohibited this leaf from being saved:"
+      %ul
+        - @leaf.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :label
+    = f.text_field :label
+  .field
+    = f.label :url
+    = f.text_field :url
+  .actions
+    = f.submit 'Save'

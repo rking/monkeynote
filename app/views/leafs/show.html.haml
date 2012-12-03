@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Label:
+  = @leaf.label
+%p
+  %b Url:
+  = @leaf.url
+
+= link_to 'Edit', edit_leaf_path(@leaf)
+\|
+= link_to 'Back', leafs_path
