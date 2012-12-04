@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(:version => 20121203053417) do
 
-  create_table "leafs", :force => true do |t|
+  create_table "leaves", :force => true do |t|
     t.string   "label"
     t.string   "url"
     t.datetime "created_at", :null => false

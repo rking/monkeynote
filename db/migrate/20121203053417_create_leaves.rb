@@ -1,6 +1,6 @@
-class CreateLeafs < ActiveRecord::Migration
+class CreateLeaves < ActiveRecord::Migration
   def change
-    create_table :leafs do |t|
+    create_table :leaves do |t|
       t.string :label
       t.string :url
 
