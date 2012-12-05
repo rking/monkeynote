@@ -5,6 +5,7 @@ gem 'rails', '3.2.9'
 gem 'sqlite3' # gem 'pg'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'keynote'
 
 group :assets do
   gem 'sass-rails'
