@@ -1,10 +1,10 @@
-class LeafsController < ApplicationController
+class LeavesController < ApplicationController
 
   def index
-    @leafs = Leaf.all
+    @leaves = Leaf.all
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @leafs }
+      format.json { render json: @leaves }
     end
   end
 
@@ -58,7 +58,7 @@ class LeafsController < ApplicationController
     @leaf = Leaf.find params[:id]
     @leaf.destroy
     respond_to do |format|
-      format.html { redirect_to leafs_url }
+      format.html { redirect_to leaves_url }
       format.json { head :no_content }
     end
   end

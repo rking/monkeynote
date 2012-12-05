@@ -1,14 +1,14 @@
 require 'test_helper'
 
-class LeafsControllerTest < ActionController::TestCase
+class LeavesControllerTest < ActionController::TestCase
   setup do
-    @leaf = leafs(:fred)
+    @leaf = leaves(:fred)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:leafs)
+    assert_not_nil assigns(:leaves)
   end
 
   test "should get new" do
@@ -44,6 +44,6 @@ class LeafsControllerTest < ActionController::TestCase
       delete :destroy, id: @leaf
     end
 
-    assert_redirected_to leafs_path
+    assert_redirected_to leaves_path
   end
 end
