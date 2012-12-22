@@ -20,8 +20,9 @@ group :development do
   gem 'turn' # colorized minitest output
   gem 'pry-de' # Pull in pry-full plus a few choice bits. More to come
   gem 'guard', github: 'guard'
-  gem 'guard-minitest'
+  gem 'guard-bundler'
   gem 'guard-spork'
+  gem 'guard-minitest', github: 'rking/guard-minitest'
   gem 'spork-minitest'
   gem 'rb-inotify', require: false # No harm when installed on OS X
   gem 'rb-fsevent', require: false # No harm when installed on Linux!
