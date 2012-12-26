@@ -16,16 +16,8 @@ group :assets do
 end
 
 group :development do
-  gem 'minitest' # Much easier to work with in the REPL (compared to RSpec)
-  gem 'turn' # colorized minitest output
-  gem 'pry-de' # Pull in pry-full plus a few choice bits. More to come
-  gem 'guard', github: 'guard'
-  gem 'guard-bundler'
-  gem 'guard-spork'
+  gem 'working'
+  # XXX either they accept my pull req or I push my own gem. >=(
   gem 'guard-minitest', github: 'rking/guard-minitest'
-  gem 'spork-minitest'
-  gem 'rb-inotify', require: false # No harm when installed on OS X
-  gem 'rb-fsevent', require: false # No harm when installed on Linux!
   gem 'pry-rails'
-  gem 'rake'
 end

@@ -1,14 +1,4 @@
 GIT
-  remote: git://github.com/guard/guard.git
-  revision: 116e5d327da56a7504a23505e05571d8f288bb0f
-  specs:
-    guard (1.5.4)
-      listen (>= 0.6.0)
-      lumberjack (>= 1.0.2)
-      pry (>= 0.9.10)
-      thor (>= 0.14.6)
-
-GIT
   remote: git://github.com/rking/guard-minitest.git
   revision: 06e7c27602b92c51d9fd85b11ed7e6e7f17e3015
   specs:
@@ -49,7 +39,7 @@ GEM
     arel (3.0.2)
     awesome_print (1.1.0)
     binding_of_caller (0.6.8)
-    bond (0.4.2)
+    bond (0.4.3)
     builder (3.0.4)
     childprocess (0.3.6)
       ffi (~> 1.0, >= 1.0.6)
@@ -88,6 +78,11 @@ GEM
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
       posix-spawn (~> 0.3.6)
+    guard (1.6.0)
+      listen (>= 0.6.0)
+      lumberjack (>= 1.0.2)
+      pry (>= 0.9.10)
+      thor (>= 0.14.6)
     guard-bundler (1.0.0)
       bundler (~> 1.0)
       guard (~> 1.1)
@@ -105,7 +100,7 @@ GEM
     hike (1.2.1)
     i18n (0.6.1)
     interception (0.3)
-    jist (1.2.0)
+    jist (1.3.0)
       json
     journey (1.0.4)
     jquery-rails (2.1.4)
@@ -123,9 +118,9 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.19)
-    minitest (4.3.2)
+    minitest (4.3.3)
     multi_json (1.4.0)
-    nokogiri (1.5.5)
+    nokogiri (1.5.6)
     polyglot (0.3.3)
     posix-spawn (0.3.6)
     pry (0.9.10)
@@ -134,7 +129,7 @@ GEM
       slop (~> 3.3.1)
     pry-awesome_print (9.6.5)
       awesome_print (~> 1.1.0)
-    pry-de (0.0.4)
+    pry-de (0.1.0)
       guard
       pry-full
     pry-debugger (0.2.0)
@@ -145,7 +140,7 @@ GEM
     pry-doc (0.4.4)
       pry (>= 0.9.9.6)
       yard (~> 0.8.1)
-    pry-docmore (0.0.2)
+    pry-docmore (0.0.3)
       pry
       pry-doc
     pry-editline (1.1.1)
@@ -251,6 +246,18 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    working (0.0.1)
+      guard
+      guard-bundler
+      guard-spork
+      minitest
+      pry-de
+      pry-rails
+      rake
+      rb-fsevent
+      rb-inotify
+      spork-minitest
+      turn
     yard (0.8.3)
 
 PLATFORMS
@@ -259,23 +266,14 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails
   compass-rails
-  guard!
-  guard-bundler
   guard-minitest!
-  guard-spork
   haml-rails
   jquery-rails
   keynote
-  minitest
-  pry-de
   pry-rails
   rails (= 3.2.9)
-  rake
-  rb-fsevent
-  rb-inotify
   sass-rails
-  spork-minitest
   sqlite3
   therubyracer
-  turn
   uglifier
+  working
