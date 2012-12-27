@@ -13,7 +13,7 @@ class FormPresenterTest < Keynote::TestCase
   def setup
     # XXX we need a better set of test tools:
     def view.palm_tree_path(*)
-      "hey"
+      '/fake_action'
     end
   end
 
@@ -24,9 +24,11 @@ class FormPresenterTest < Keynote::TestCase
     html  = Nokogiri::HTML.fragment raw
 
     [
-      'form',
-      'form > label[for=palm_tree_coconuts]',
-      'form > label[for=palm_tree_leaves]',
+      'form [action="/fake_action"]',
+      'div[class=field]',
+      'form label[for=palm_tree_coconuts]',
+      'form input[id=palm_tree_coconuts]',
+      'form label[for=palm_tree_leaves]',
     ].each do |selector|
       assert html.css(selector).any?, "Looking for #{selector}"
     end
