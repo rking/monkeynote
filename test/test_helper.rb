@@ -1,4 +1,2 @@
 require 'working/rails_test_helper'
-__END__
-Shut up, spork.
-Spork.prefork do
+# Spork.prefork doesn't like when this line is missing.
