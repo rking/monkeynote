@@ -17,7 +17,6 @@ end
 
 group :development do
   gem 'working'
-  # XXX either they accept my pull req or I push my own gem. >=(
-  gem 'guard-minitest', github: 'rking/guard-minitest'
+  gem 'pry-rescue', github: 'ConradIrwin/pry-rescue', branch: 'feature/kill-pry-rescue'
   gem 'pry-rails'
 end
