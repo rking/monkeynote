@@ -1,3 +1,3 @@
 task :test do
-  sh 'testrb', *Dir['test/**/*_test.rb']
+  Dir['test/**/*_test.rb'].each{|e| load e}
 end
