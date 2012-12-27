@@ -20,3 +20,7 @@ group :development do
   gem 'pry-rescue', github: 'ConradIrwin/pry-rescue', branch: 'feature/kill-pry-rescue'
   gem 'pry-rails'
 end
+
+group :test do
+  gem 'nokogiri'
+end

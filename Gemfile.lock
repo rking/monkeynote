@@ -272,6 +272,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   keynote
+  nokogiri
   pry-rails
   pry-rescue!
   rails (= 3.2.9)
