@@ -16,9 +16,7 @@ group :assets do
 end
 
 group :development do
-  gem 'working'
-  gem 'pry-rescue', github: 'ConradIrwin/pry-rescue', branch: 'feature/kill-pry-rescue'
-  gem 'pry-rails'
+  gem 'working-rails'
 end
 
 group :test do

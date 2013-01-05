@@ -1,1 +1,1 @@
-require 'working/guard'
+require 'working-rails/guard'
