@@ -1,6 +1,7 @@
 class LeavesController < ApplicationController
 
   def index
+    'charliesome'.to_i/0
     @leaves = Leaf.all
     respond_to do |format|
       format.html # index.html.erb
