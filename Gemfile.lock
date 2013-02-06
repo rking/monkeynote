@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/charliesome/better_errors.git
+  revision: e97172e9171dd932f06a0bcd7cf1e3923739ac5c
+  specs:
+    better_errors (0.5.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -33,9 +41,6 @@ GEM
     awesome_print (1.1.0)
     beg (0.0.3)
       guard
-    better_errors (0.3.2)
-      coderay (>= 1.0.0)
-      erubis (>= 2.7.0)
     binding_of_caller (0.6.8)
     bond (0.4.3)
     builder (3.0.4)
@@ -268,6 +273,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors!
   coffee-rails
   compass-rails
   haml-rails

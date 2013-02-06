@@ -16,6 +16,7 @@ group :assets do
 end
 
 group :development do
+  gem 'better_errors', github: 'charliesome/better_errors'
   gem 'working-rails'
 end
 
