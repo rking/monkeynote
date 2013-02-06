@@ -34,6 +34,4 @@ Monkeynote::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-
-  BetterErrors::REPL::PROVIDERS.unshift provider: 'better_errors/repl/pry', const: :Pry
 end
