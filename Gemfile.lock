@@ -247,7 +247,7 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    working (0.0.8)
+    working (0.0.9)
       beg
       guard-bundler
       guard-sporkminitest
@@ -255,7 +255,7 @@ GEM
       pry-de
       rake
       turn
-    working-rails (0.1.0)
+    working-rails (0.2.0)
       better_errors
       pry-rails
       quiet_assets
