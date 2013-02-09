@@ -8,7 +8,7 @@ class LeavesControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:leaves)
+    assert_not_nil assigns(:objs)
   end
 
   test "should get new" do
@@ -21,7 +21,7 @@ class LeavesControllerTest < ActionController::TestCase
       post :create, leaf: { label: @leaf.label, url: @leaf.url }
     end
 
-    assert_redirected_to leaf_path(assigns(:leaf))
+    assert_redirected_to leaf_path(assigns(:obj))
   end
 
   test "should show leaf" do
@@ -36,7 +36,7 @@ class LeavesControllerTest < ActionController::TestCase
 
   test "should update leaf" do
     put :update, id: @leaf, leaf: { label: @leaf.label, url: @leaf.url }
-    assert_redirected_to leaf_path(assigns(:leaf))
+    assert_redirected_to leaf_path(assigns(:obj))
   end
 
   test "should destroy leaf" do
