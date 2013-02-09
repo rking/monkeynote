@@ -11,13 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121203053417) do
+ActiveRecord::Schema.define(:version => 20130209211230) do
 
   create_table "leaves", :force => true do |t|
     t.string   "label"
     t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "leaves_tags", :force => true do |t|
+    t.integer "leaf_id"
+    t.integer "tag_id"
+  end
+
+  create_table "tags", :force => true do |t|
+    t.string "label"
   end
 
 end

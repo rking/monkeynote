@@ -1,0 +1,11 @@
+math:
+  label: Math
+
+games:
+  label: Has Games
+
+videos:
+  label: Has Videos
+
+spelling:
+  label: Spelling

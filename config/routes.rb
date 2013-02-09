@@ -1,4 +1,4 @@
 Monkeynote::Application.routes.draw do
-  resources :leaves
+  resources :leaves, :tags
   root to: 'leaves#index'
 end

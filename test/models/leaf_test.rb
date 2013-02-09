@@ -6,5 +6,6 @@ class LeafTest < ActiveSupport::TestCase
     assert leaf.valid?
     leaf.url = ''
     refute leaf.valid?
+    assert_equal [], leaf.tags
   end
 end
