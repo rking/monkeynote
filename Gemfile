@@ -16,7 +16,7 @@ group :assets do
 end
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', path: '../better_errors/'
   gem 'working-rails'
 end
 
