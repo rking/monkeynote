@@ -18,6 +18,7 @@ end
 group :development do
   gem 'better_errors'
   gem 'working-rails'
+  gem 'spork'
 end
 
 group :test do

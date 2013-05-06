@@ -275,6 +275,7 @@ DEPENDENCIES
   nokogiri
   rails (= 3.2.11)
   sass-rails
+  spork
   sqlite3
   therubyracer
   uglifier
